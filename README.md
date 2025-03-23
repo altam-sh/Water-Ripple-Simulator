@@ -78,7 +78,7 @@ Having no experience myself with what exactly it took to produce them, computer 
 This project was a deep dive into mesh deformation, interaction, and wave physics, with plenty of technical challenges along the way.
 All valuable skills to gain experience in, all the while producing a visually engaging project which was important to me.
 
-Water ripples are often associated with calmness, and the munadane phenomenon is something that's always fascinated me. 
+Water ripples are often associated with calmness, and the mundane phenomenon is something that's always fascinated me. 
 The **wishing well** representing a personal symbol of mine, the ripples on the surface of water seemed like a sound place to start.
 
 # [Thank you for your interest!]
