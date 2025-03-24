@@ -47,7 +47,7 @@ document.getElementById('tossButton').addEventListener('click', function() {
     coin.style.opacity = '1';
 
     // Enlarge the picture
-    picture.style.transform = 'scale(1.2)';
+    picture.style.transform = 'scale(1.4)';
 
     // Trigger reflow to restart animation
     void coin.offsetWidth;
@@ -75,6 +75,6 @@ document.getElementById('tossButton').addEventListener('click', function() {
     // Navigate to another page after the animation is complete
     setTimeout(() => {
         
-        window.location.href = 'new-page.html'; // Change to your desired URL
+        window.location.href = 'mainmenu.html'; // Change to your desired URL
     }, 1700); // Adjusted to match the total animation duration
 });

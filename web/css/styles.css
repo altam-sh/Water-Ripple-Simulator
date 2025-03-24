@@ -37,7 +37,7 @@ body {
 #textBelow2 {
     opacity: 0; /* Initially hidden */
     transition: opacity 1s ease; /* Transition for fade in/out */
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin-top: 30px;  
     color: white;
 }
@@ -45,7 +45,7 @@ body {
 #tossButton {
     opacity: 0; /* Initially hidden */
     padding: 10px 20px;
-    font-size: 22px;
+    font-size: 1.5vw;
     cursor: pointer;
     margin-top: 50px;
     transition: opacity 1s ease, transform 0.3s ease, color 0.3s ease;
@@ -71,8 +71,8 @@ body {
 #coin {
     position: fixed;
     bottom: -65px;
-    width: 3vw;
-    height: 3vw;
+    width: 3.5vw;
+    height: 3.5vw;
     background-color: white;
     border-radius: 50%;
     transform: translateX(-50%);

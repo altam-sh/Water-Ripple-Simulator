@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Wells</title>
+    <link rel="stylesheet" href="css/mainmenu.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>Water Ripple Simulator</header>
+
+        <div class="icons-container">
+            <a href="" target="_blank">
+                <img src="assets/demo-video.png" alt="Demo Video" class="icons"> 
+            </a>
+            <a href="https://github.com/altam-sh/Water-Ripple-Simulator" target="_blank">
+                <img src="assets/github-icon.png" alt="GitHub Source Code" class="icons">
+            </a>
+        </div>
+
+        <section>
+            <h2>Project Showcase</h2>
+            <p class="italic">[A brief overview of the project and its purpose]</p>
+            <p>
+                This project explores real-time water ripple simulation using Libigl, 
+                a powerful C++ library for geometry processing. By leveraging mesh deformation
+                techniques, the project creates an interactive water surface that reacts dynamically to user input.
+            </p>
+            <img src="assets/drops.gif" alt="Project Showcase GIF">
+            
+        </section>
+
+        <section>
+            <h2>Project Overview</h2>
+            <p class="italic">[A quick explanation of what the project does]</p>
+            <p>
+                The simulation generates ripples on a 3D water surface when the user interacts with it. 
+                Waves propagate, interfere, and gradually fade, mimicking real-world water dynamics. 
+                The system balances computational efficiency with visual appeal, ensuring smooth real-time interaction.
+            </p>
+        </section>
+
+        <section>
+            <h2>How it Works</h2>
+            <p class="italic">[A simplified explanation of the underlying mechanics]</p>
+            <p>
+                The simulation is based on mesh deformation, where each ripple follows a damped sine wave model. 
+                When a user clicks on the surface, a disturbance is introduced, and the wave propagates outward. 
+                Superposition principles govern wave interaction, allowing them to add up or cancel each other out.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <p class="italic">[Key functionalities of the project]</p>
+            <p>
+                At the start of this project, I set 5 objectives to guide my development process, each corresponding to one implemented feature.
+                Here are each of those objectives and their corresponding features.
+            </p>
+        </section>
+
+        <section>
+            <h3>1. "Implement a deformable mesh plane to serve as the interactive water surface."</h2>
+            <p class="italic">[Everything starts somewhere]</p>
+            <p>
+                My first objective was to create a simple mesh plane that would represent the water surface.
+                The mesh is deformable, allowing the user to interact with it and eventually create ripples.
+                Libigl's mesh data structure made this task straightforward, allowing me to define a grid of vertices and faces - a simple but crutial first step.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        <section>
+            <h3>2.	"Generate and animate ripples using a wave function when the user clicks on the surface."</h2>
+            <p class="italic">[The first ripple]</p>
+            <p>
+                Clicking on the water surface generates ripples that expand outward dynamically. The simulation responds in real time, creating a visually engaging effect.
+                Ripples move across the surface smoothly, following a damped sine wave model. As they travel, they interact with other waves, forming realistic interference patterns.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        <section>
+            <h3>3.	"Allow user control over ripple intensity (e.g., pressing "Q" decreases ripple size, "E" increases it)."</h2>
+            <p class="italic">[Giving them a choice]</p>
+            <p>
+                The user can adjust ripple strength using simple keyboard controls (e.g., "Q" to decrease and "E" to increase), allowing for different wave behaviors.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        
+        <section>
+            <h3>4.	"Simulate realistic ripple interactions, where overlapping waves add up or cancel out."</h2>
+            <p class="italic">[Constructive and disctructive interference]</p>
+            <p>
+                Ripples gradually fade over time instead of disappearing abruptly, mimicking how water waves naturally lose energy.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        
+        <section>
+            <h3>5.	"Implement smooth ripple decay so waves gradually fade instead of disappearing instantly."</h2>
+            <p class="italic">[Realism and aesthetics]</p>
+            <p>
+                Clicking on the water surface generates ripples that expand outward dynamically. The simulation responds in real time, creating a visually engaging effect.
+                Ripples move across the surface smoothly, following a damped sine wave model. As they travel, they interact with other waves, forming realistic interference patterns.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        
+        <section>
+            <h3>[Bonus] 6.	"Allow users to pause the simulation in order to better observe interactions."</h2>
+            <p class="italic">[Adapting during development]</p>
+            <p>
+                Pressing the spacebar freezes the ripples, letting users analyze wave interactions more closely without them disappearing too quickly. 
+                This feature was added during development to enhance the user experience as it was difficult to find a sweet spot between ripple realism and observability. 
+                The ability to pause served as a compromise, allowing users to study the simulation at their own pace while keeping the ripples at a realistic speed.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        <section>
+            <h2>Challenges & Improvements</h2>
+            <p class="italic">[Obstacles faced and potential enhancements]</p>
+            <p>
+                One challenge was ensuring accurate mouse interaction with the mesh, particularly when the camera moves. 
+                Future improvements include fixing this calibration issue, adding adjustable decay speed, and exploring GPU-based wave computation for better performance.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+        <section>
+            <h2>Conclusion & Future Work</h2>
+            <p class="italic">[Reflections and possible extensions.]</p>
+            <p>
+                This project successfully simulates interactive water ripples, demonstrating real-time mesh deformation. 
+                Future work could explore advanced wave physics, normal mapping for more detailed rendering, and user-controlled environmental effects like wind or depth variation.
+            </p>
+            <img src="assets/project3.gif" alt="Feature GIF">
+        </section>
+
+    </div>
+
+</body>
+</html>
