@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+#textAbove {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Transition for fade in/out */
+    font-size: 150px;
+    margin-bottom: 40px;
+}
+
+#textBelow {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Transition for fade in/out */
+    font-size: 44px;
+    margin-top: 30px;
+}
+
+#tossButton {
+    opacity: 0; /* Initially hidden */
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: opacity 1s ease, transform 0.3s ease, color 0.3s ease;
+    background: transparent;
+    border: 3px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#tossButton:hover {
+    color: #777; /* Slightly paler text color */
+    transform: translateY(-5px); /* Gently lifts up */
+}
+
+#picture {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    transition: transform 1s ease;
+    margin-right: 20px;
+}
+
+#coin {
+    position: fixed;
+    bottom: -65px;
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s ease, left 1s ease, transform 1s ease, opacity 1s ease;
+    opacity: 0; /* Initially hidden */
+}
