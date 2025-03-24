@@ -57,23 +57,24 @@ function createRaindrop() {
     return {
         x: Math.random() * rainCanvas.width,
         y: Math.random() * rainCanvas.height * -1, // Start above screen
-        speed: Math.random() * 2 + 2, // Different speeds
-        radius: Math.random() * 1.5 + 0.5 // Small drops
+        speed: Math.random() * 10 + 10, // Faster drops (was 2-4, now 10-20)
+        length: Math.random() * 10 + 10 // Line length (10 to 20 px)
     };
 }
 
 function updateRain() {
     rainCtx.clearRect(0, 0, rainCanvas.width, rainCanvas.height);
+    rainCtx.strokeStyle = 'rgba(255, 255, 255, 0.2)'; 
+    rainCtx.lineWidth = 1.5;
 
     for (let drop of raindrops) {
         drop.y += drop.speed;
 
-        // Draw the drop
+        // Draw the raindrop as a line
         rainCtx.beginPath();
-        rainCtx.arc(drop.x, drop.y, drop.radius, 0, Math.PI * 2);
-        rainCtx.fillStyle = 'rgba(255, 255, 255, 0.4)'; // Light bluish raindrop
-        rainCtx.fill();
-        rainCtx.closePath();
+        rainCtx.moveTo(drop.x, drop.y);
+        rainCtx.lineTo(drop.x, drop.y + drop.length);
+        rainCtx.stroke();
 
         // If raindrop reaches the bottom, reset it
         if (drop.y > rainCanvas.height) {
