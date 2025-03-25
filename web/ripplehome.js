@@ -58,7 +58,7 @@ function createRaindrop() {
         x: Math.random() * rainCanvas.width,
         y: Math.random() * rainCanvas.height * -1, // Start above screen
         speed: Math.random() * 10 + 10, // Faster drops (was 2-4, now 10-20)
-        length: Math.random() * 20 + 20 // Line length (10 to 20 px)
+        length: Math.random() * 30 + 30 // Line length (10 to 20 px)
     };
 }
 

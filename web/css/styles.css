@@ -3,10 +3,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     margin: 0;
-    perspective: 1000px; /* Add perspective for 3D effect */
+    perspective: 1500px; /* Add perspective for 3D effect */
     overflow: hidden;
 }
 
@@ -78,4 +78,24 @@ body {
     transform: translateX(-50%);
     transition: bottom 1s ease, left 1s ease, transform 1s ease, opacity 1s ease;
     opacity: 0; /* Initially hidden */
+}
+
+#ripple-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Ensures it's behind all other content */
+    pointer-events: none; /* Prevents interaction */
+}
+
+#rain-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
 }
