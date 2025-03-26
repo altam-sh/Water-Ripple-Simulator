@@ -3,21 +3,27 @@
 ### Project by Altamash Sheikh 
 Personal Computer Graphics Project Submitted as Final Project for COMP 438/6381 at Concordia University
 
+[Demo Video Link](https://youtu.be/jVUlNFdEpEA)
+
 ## Overview  
 This project is an **interactive water ripple simulation** built using **libigl (C++)**. The goal is to simulate realistic **wave-like ripples** on a 3D surface, triggered by user interaction. Clicking on the surface generates ripples that spread, interact, and fade over time, mimicking the behavior of real water.
 
 ---
 
 ## Features  
-- **Click to Create Ripples** – Left-click anywhere on the surface to generate a ripple.  
-- **Adjustable Ripple Intensity** –  
+- **Click to Create Ripples**
+  - Left-click anywhere on the surface to generate a ripple.  
+- **Adjustable Ripple Intensity**   
   - `Q` - Decrease ripple intensity  
   - `E` - Increase ripple intensity  
-- **Pause/Resume Simulation** –  
+- **Pause/Resume Simulation**   
   - `Space` - Toggle pause/resume  
-- **Realistic Wave Dynamics** –  
+- **Realistic Wave Dynamics**   
   - Ripples interact, overlapping waves amplify or cancel out.  
-  - Gradual wave decay for a smooth, natural fade-out.  
+  - Gradual wave decay for a smooth, natural fade-out.
+- **Reset surface to Default**
+  - `R` - Resets surface to Default (flat)
+  - Useful to clear ripples/waves from surface   
 
 ---
 
